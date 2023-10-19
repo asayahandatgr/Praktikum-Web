@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+</head>
+<body>
+    <header style="margin-top: 20px;">
+        <nav class="navbar">
+                    <ul style="display: flex; justify-content: space-around; list-style-type: none;">
+                    <li><a href="#" style="text-decoration: none;">Home</a></li><hr style=" border: 1px solid black; padding: 0; margin: 0;">
+                    <li><a href="#" style="text-decoration: none;">Generate Link</a></li><hr style=" border: 1px solid black; padding: 0; margin: 0;">
+                    <li><a href="#" style="text-decoration: none;">Transaction History</a></li><hr style=" border: 1px solid black; padding: 0; margin: 0;">
+                    <li><a href="#" style="text-decoration: none;">Policy</a></li><hr style=" border: 1px solid black; padding: 0; margin: 0;">
+                    <li><a href="#" style="text-decoration: none;">Logout</a></li>
+                </ul>
+        </nav>
+    </header>
+    <br>
+    <br>
+    <div class="container" style="display: flex; justify-content: center; align-items: center;">
+        <main class="detail" style="display: flex; align-items: center; justify-content: center; margin-top: 20px;">
+            <div class="left" style="text-align: center; background-color: darkgreen; border-radius: 20px 0 0 20px; width: 500px; height: 500px; padding: 20px;">
+                <img src="https://png.monster/wp-content/uploads/2022/09/png.monster-209.png" alt="Iphone" width="350px"> <br>
+                <input type="file">
+            </div>
+            <div class="right" style="background-color: cornsilk; border-radius: 0 20px 20px 0; height: 500px; padding: 20px; width: 500px;">
+                <form action="#">
+                    <table>
+                        <tr>
+                            <td>Produk</td>
+                            <td>: <input type="text" required></td>
+                        </tr>
+                        <tr>
+                            <td>Description</td>
+                            <td>: <textarea name="" id="" cols="30" rows="10" required></textarea></td>
+                        </tr>
+                        <tr>
+                            <td>Account Number </td>
+                            <td>: <input type="text" required></td>
+                        </tr>
+                        <tr>
+                            <td>Bank</td>
+                            <td>: 
+                                <select name="Bank">
+                                    <option value=""></option>
+                                    <option value="">BCA</option>
+                                    <option value="">MANDIRI</option>
+                                    <option value="">BRI</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Account Holder</td>
+                            <td>:
+                                <input type="number">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><p>*if the transaction is for 3 person, choose 3 from the drop-down list</p> </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox">
+                                <label for="ph">Send to Mobile Phone</label>
+                            </td>
+                        </tr>
+                        <tr>
+                                <td>
+                                    <input type="checkbox">
+                                    <label for="">Send to Email</label>
+                                </td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Send to Mobile Phone </td>
+                            <td>: <input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>Send to Email</td>
+                            <td>: <input type="text"></td>
+                        </tr>
+                    </table>
+                    <br>
+                    <input type="submit" value="Generate Nabr Link">
+                </form>
+            </div>
+        </main>
+    </div>
+    
+    
+</body>
+</html>
