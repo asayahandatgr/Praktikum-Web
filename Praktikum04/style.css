@@ -1,0 +1,50 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+fieldset {
+    width: 700px;
+    height: 700px;
+    text-align: center;
+    border: 2px solid #000;
+}
+header {
+    display: flex; 
+    justify-content: space-around;
+    text-align: left;
+}
+header h1 {
+    font-size: 20px;
+}
+.img {
+    margin-right: 100px;
+    display: flex;
+}
+.nama {
+    margin-left: 50px;
+}
+.nama p {
+    text-align: left;
+}
+.nama p a {
+    text-decoration: none;
+}
+.hobbi p {
+    text-align: left;
+}
+p {
+    text-align: left;
+}
+.link {
+    margin-top: -8px;
+}
+.link ul li {
+    text-align: left;
+    list-style-type: none;
+    margin-left: -20px;
+    padding: 5px;
+}
