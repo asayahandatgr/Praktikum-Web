@@ -1,0 +1,22 @@
+h1 {
+    text-align: center;
+}
+.navbar ul {
+    display: flex;
+    gap: 15px;
+    justify-content: right;
+    margin-right: 50px;
+}
+.navbar ul li {
+    text-decoration: none;
+    list-style: none;
+}
+.navbar ul li a {
+    text-decoration: none;
+}
+fieldset {
+    height: 180px;
+}
+legend {
+    font-size: large;
+}
