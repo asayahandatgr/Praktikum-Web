@@ -1,0 +1,32 @@
+body {
+  background-color: black;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* p {
+  min-width: 576px;
+} */
+.navbar-brand img {
+  width: 25%;
+  height: 25%;
+}
+.navbar-nav a {
+  color: aliceblue;
+  font-size: larger;
+}
+.carousel-inner img {
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  margin-top: 100px;
+  border-radius: 10px;
+}
+.card img {
+  border-radius: 10px;
+}
+.card p {
+  text-align: justify;
+  font-size: large;
+}
