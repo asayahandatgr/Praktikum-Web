@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn Js</title>
+  </head>
+  <body>
+    <input type="number" name="empat" id="empat" onchange="hitungTabel()" />
+
+    <h2>+</h2>
+
+    <input type="number" name="lima" id="lima" onchange="hitungTabel()" />
+
+    <h2>=</h2>
+
+    <table>
+      <th>
+        <tr>
+          <td>
+            <p><span id="hasil"></span></p>
+          </td>
+        </tr>
+      </th>
+    </table>
+
+    <!-- Java -->
+    <script>
+      function hitungTabel() {
+        let satu = parseFloat(document.getElementById('empat').value);
+        let dua = parseFloat(document.getElementById('lima').value);
+
+        let hasil = satu + dua;
+
+        document.getElementById('hasil').innerText = hasil;
+      }
+    </script>
+  </body>
+</html>
