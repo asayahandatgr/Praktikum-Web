@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Pemesanan Tiket</title>
+  </head>
+
+  <body>
+    <fieldset>
+      <legend>Form</legend>
+      <form>
+        <table>
+          <tr>
+            <td><label for="nama">Nama Pelanggan : </label></td>
+            <td><input type="text" name="nama" id="nama" required maxlength="30" /></td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="email">Email : </label>
+            </td>
+            <td>
+              <input type="email" name="email" id="email" required />
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="jam">Jam Keberangkatan : </label>
+            </td>
+            <td>
+              <input type="time" name="jam" id="jam" required />
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="tujuan">Tujuan Keberangkatan : </label>
+            </td>
+            <td>
+              <input type="text" name="tujuan" id="tujuan" />
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="tiket">Jumlah Tiket : </label>
+            </td>
+            <td>
+              <input type="number" name="tiket" id="tiket" required min="1" max="10" />
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <button type="submit">Submit</button>
+            </td>
+          </tr>
+        </table>
+      </form>
+    </fieldset>
+
+    <div>
+      <p>Nama Pelanggan : <span id="hasilNama"></span></p>
+      <p>Email : <span id="hasilEmail"></span></p>
+      <p>Jam Keberangkatan : <span id="hasilJam"></span></p>
+      <p>Tujuan Keberangkatan : <span id="hasilTujuan"></span></p>
+      <p>Jumlah Tiket : <span id="hasilTiket"></span></p>
+    </div>
+
+    <script>
+      document.querySelector('form').addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        const nama = document.getElementById('nama').value;
+        const email = document.getElementById('email').value;
+        const jam = document.getElementById('jam').value;
+        const tujuan = document.getElementById('tujuan').value;
+        const tiket = document.getElementById('tiket').value;
+
+        document.getElementById('hasilNama').innerText = nama;
+        document.getElementById('hasilEmail').innerText = email;
+        document.getElementById('hasilJam').innerText = jam;
+        document.getElementById('hasilTujuan').innerText = tujuan;
+        document.getElementById('hasilTiket').innerText = tiket;
+      });
+    </script>
+  </body>
+</html>
